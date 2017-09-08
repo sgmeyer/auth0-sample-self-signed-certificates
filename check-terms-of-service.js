@@ -24,10 +24,7 @@
   // demonstrate securing the API with OAuth and Tokens.  This needs to be included
   // in a production ready system.
   var request_options = {
-    url: 'https://api.achme.com/user/tos?id=' + user.email,
-    agentOptions: {
-      ca: buildCert()
-    }
+    url: 'https://api.achme.com/user/tos?id=' + user.email
   };
 
   if (configuration.ca_certificate) {
